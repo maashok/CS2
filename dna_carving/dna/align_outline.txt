@@ -1,0 +1,30 @@
+Align two strings s1 and s2:
+1) Check if this combination of s1 and s2 has already been calculated for
+the optimal score as a  memo_type. If so, use that score and instruction
+string.
+
+2) Check if one of the two is an empty string: if so, the score of that
+alignment is just -5 * the length of the non-empty string and the alignment
+if just the character representing the non-empty string however many times
+it is long.
+
+3) Special case: If both strings are empty, the score is 0, and the alignment
+is empty
+
+4 a. Possibility 1 to align strings
+		Align s2 starting with the second character of s1
+		Add -5 to the score of this alignment as the first character of
+		s1 will have a gap in s2 matching with it.
+  b. Possibility 2 to align strings
+		Align s1 starting with the second character of s2
+		Add -5 to the score of this alignment as the first character
+		of s2 wil have a gap in s1 matching with it
+  c. Possibility 3 to align strings
+		Align s1 and s2 starting with the second characters of each
+		Add 2 to the score if the first characters of each are matching
+		Add -1 to the score if the first characters mismatch
+
+5) Check which of these possibilites leads to the lowest score. That
+   is the optimal alignment, and will be stored as a memo_type so that
+   we do not need to do the whole recursive process if we have the
+   same two strings later.

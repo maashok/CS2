@@ -1,0 +1,48 @@
+cs2student@cs2student-virtual-machine:~/cs2_week2_2016$ ./ConvexHullApp
+(484,572)   (615,300)   (570,99)   Z-coordinate-85355
+Is a left turn
+(615,300)   (570,99)   (524,22)   Z-coordinate30801
+Is a right turn 3
+(484,572)   (615,300)   (524,22)   
+(484,572)   (615,300)   (524,22)   Z-coordinate-82930
+Is a left turn
+(615,300)   (524,22)   (438,105)   Z-coordinate66951
+Is a right turn 3
+(484,572)   (615,300)   (524,22)   (438,105)   
+(484,572)   (615,300)   (438,105)   Z-coordinate-48665
+Is a left turn
+(615,300)   (524,22)   (445,416)   Z-coordinate36704
+Is a right turn 3
+(484,572)   (615,300)   (524,22)   (438,105)   (445,416)   
+(484,572)   (615,300)   (445,416)   Z-coordinate-9828
+Is a left turn
+(615,300)   (524,22)   (126,134)   Z-coordinate151048
+Is a right turn 3
+(484,572)   (615,300)   (524,22)   (438,105)   (445,416)   (126,134)   
+(484,572)   (615,300)   (126,134)   Z-coordinate39998
+Is a right turn 2
+(484,572)   (615,300)   (136,164)   Z-coordinate41208
+Is a right turn 2
+(484,572)   (615,300)   (0,27)   Z-coordinate60253
+Is a right turn 2
+(484,572)   (615,300)   (58,98)   Z-coordinate53778
+Is a right turn 2
+Is a left turn
+cs2student@cs2student-virtual-machine:~/cs2_week2_2016$ ./ConvexHullApp
+(704,553)   (688,175)   (396,290)   Z-coordinate120632
+Is a right turn 2
+(704,553)   (688,175)   (472,368)   Z-coordinate90656
+Is a right turn 2
+(704,553)   (688,175)   (325,281)   Z-coordinate147614
+Is a right turn 2
+(704,553)   (688,175)   (197,369)   Z-coordinate194590
+Is a right turn 2
+(704,553)   (688,175)   (160,393)   Z-coordinate208192
+Is a right turn 2
+(704,553)   (688,175)   (532,513)   Z-coordinate65656
+Is a right turn 2
+(704,553)   (688,175)   (273,517)   Z-coordinate163494
+Is a right turn 2
+(704,553)   (688,175)   (334,538)   Z-coordinate140100
+Is a right turn 2
+Is a left turn

@@ -1,0 +1,148 @@
+/**
+ * @file
+ * @author The CS2 TA Team <<cs2-tas@ugcs.caltech.edu>>
+ * @version 1.0
+ * @date 2013-2014
+ * @copyright This code is in the public domain.
+ *
+ * @brief The gift wrapping and Graham scan convex hull algorithms
+ * (implementation).
+ *
+ */
+#include "HullAlgorithms.h"
+
+#define PI 3.14159265
+
+/**
+ * TO STUDENTS: In all of the following functions, feel free to change the
+ * function arguments and/or write helper functions as you see fit. Remember to
+ * add the function header to HullAlgorithms.h if you write a helper function!
+ *
+ * Our reference implementation has four helper functions and the function(s)
+ * copied over from angleSort.cpp.
+ */
+
+/**
+ * 1. Start with a point we know is on the convex hull - we can use the
+ * leftmost point - and add it to the convex hull
+ * 2. Check all remaining points
+ * 		a) Find the point which has the smallest angle between a line
+ * 			connecting these two points and a vertical line going
+ * 			through the starting point.
+ * 		b) This point will be the next point on the convex hull	
+ * 				(It will not have any points lying to the left of the 
+ * 					line connecting the two points)
+ * 		c) This point will now be used as the new starting point, and
+ * 			start from step 1 with this point.
+ * 3. End when the starting point is the same as the leftmost point.
+ */
+void DoGiftWrap(vector<Tuple*> points, ConvexHullApp *app)
+{
+    int leftPt = leftMost(points);
+	bool startNeg = false;
+    app->add_to_hull(points[leftPt]);
+    unsigned int startPt = leftPt;
+    vector<int> onHull;
+    while (true) {
+		int smallestAngle = 0;
+		unsigned int i = 0;
+		while (i < points.size()) {
+			if (checkOnHull(smallestAngle, onHull)) {
+				// I should switch the i++ and smallestAngle = i
+				// and start i at 1, since if i gets to points.size() - 1
+				// and that is the last point that will work, where it is
+				// not on the hull already (and not leftmost) and that
+				// point doesn't make you go "back". Then, instead
+				// smallestAngle gets changed to points.size()
+				// and that causes segfault in later lines
+				i++;
+				smallestAngle = i;
+			}
+			else if (startNeg && dxPos(points[startPt], points[smallestAngle])) {
+				i++;
+				smallestAngle = i;
+			}
+			else break;
+		}
+		double smallAng = angle(points[startPt], points[smallestAngle]);
+
+		for (unsigned int i = 1; i < points.size(); i++) {
+			if (checkOnHull(i, onHull) || i == startPt) continue;
+			if (startNeg && dxPos(points[startPt], points[i]))
+				continue;
+			double currentAng = angle(points[startPt], points[i]);
+			if (currentAng < smallAng) {
+				smallestAngle = i;
+				smallAng = angle(points[startPt], points[smallestAngle]);
+			}
+		}
+		app->add_to_hull(points[smallestAngle]);
+		onHull.push_back(smallestAngle);
+		if (!startNeg && !dxPos(points[startPt], points[smallestAngle]))
+			startNeg = true;
+		if (points[smallestAngle]->x == points[leftPt]->x &&
+				points[smallestAngle]->y == points[leftPt]->y) {
+					return;
+		}
+		startPt = smallestAngle;
+	}
+}
+
+bool checkOnHull(int pt, vector<int> hull) {
+	for (unsigned int i = 0; i < hull.size(); i++) {
+		if (pt == hull[i]) return true;
+	}
+	return false;
+}
+
+bool dxPos(Tuple *start, Tuple *next) {
+	double dx = (double) (next->x - start->x);
+	return dx >= 0;
+}
+
+int leftMost(vector<Tuple*> points) {
+	int leftx = 0;
+	for (unsigned int i = 1; i < points.size(); i++) {
+		if (points[i]->x < points[leftx]->x) leftx = i;
+	}
+	return leftx;
+}
+
+double angle(Tuple* start, Tuple*next) {
+	double dx = (double) (next->x - start->x);
+	double dy = (double) (next->y - start->y);
+	
+	double angle;	
+	
+	if (dx >= 0 && dy < 0) {
+		angle = atan(abs(dx/dy));
+	}
+	else if (dx > 0 && dy >= 0) {
+		angle = PI/2 + atan(abs(dy/dx));
+	}
+	else if (dx <= 0 && dy > 0) {
+		angle = PI + atan(abs(dx/dy));
+	}
+	else if (dx < 0 && dy <= 0) {
+		angle = 3*PI/2 + atan(abs(dy/dx));
+	}	
+	return angle;
+}
+
+
+ /**
+ * Steps to Graham Scan
+ * 1. Find the lowest point in a set of points - point P
+ * 			This point must be on convex hull.
+ * 2. Sort the other points with respect to the angle formed by
+ * the horizontal line crossing P and the line joining P at each point.
+ * 3. Consider points in the sorted list in sequence. 
+ */
+void DoGrahamScan(vector<Tuple*> points, ConvexHullApp *app)
+{
+    for (unsigned int i = 0; i < points.size(); ++i)
+    {
+        app->add_to_hull(points[i]);
+    }
+    app->add_to_hull(points[0]);
+}

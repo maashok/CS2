@@ -1,0 +1,55 @@
+void DoGrahamScan(vector<Tuple*> points, ConvexHullApp *app)
+{
+	std::stack<Tuple*> onHull;
+	// Find the lowest point
+	int low = lowestPt(points);
+	Tuple *lowest = points[low];
+	app->add_to_hull(lowest);
+	onHull.push(lowest);
+	points.erase(points.begin() + low);
+	points.push_back(lowest);
+	// Use sine - all positive in [0, pi) 
+	vector<double> angles;
+	std::cout << "Checkpt 1" << std::endl;
+    for (unsigned int i = 0; i < points.size(); i++)
+		angles.push_back(points[i]->angle_wrt_pt(lowest));
+	sort(points, angles, 0, points.size() - 1);
+	std::cout << "Checkpt 2" << std::endl;
+	onHull.push(points[0]);
+	app->add_to_hull(points[0]);
+	unsigned int i = 1;
+	std::cout << "Checkpt 2.5" << std::endl;
+	Tuple *pointThird = points[i];
+	while(i < points.size()){
+		Tuple *pointThird = points[i];
+		onHull.push(pointThird);
+		std::cout << "Checkpt 2.8" << std::endl;
+		if (rightTurn(onHull, pointThird)) {
+			std::cout << "Checkpt 2.85" << std::endl;
+			if (!onHull.empty()) {
+				std::cout << "Checkpt 2.86" << std::endl;
+				onHull.pop();                                                
+				onHull.pop();
+				onHull.push(pointThird);
+				i++;
+				std::cout << "Checkpt 2.88" << std::endl;
+			}
+			std::cout << "Checkpt 2.9" << std::endl;
+			continue;
+		}
+		std::cout << "Checkpt 3" << std::endl;
+		app->add_to_hull(onHull.top());
+		std::cout << "--------------------------------------------" << std::endl;
+		std::cout << "Checkpt 4" << std::endl;
+		onHull.push(points[i]);
+		std::cout << "Checkpt 5" << std::endl;
+		if (points[i] == lowest){
+			std::cout << "Checkpt 6" << std::endl;
+			app->add_to_hull(lowest);
+			return;
+		}
+		std::cout << "Checkpt 7" << std::endl;
+
+		i++;
+	}
+}

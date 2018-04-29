@@ -1,0 +1,38 @@
+1) The cost calculating part of the above algorithm uses dynamic programming.
+Instead of calculating the cost of the same pixel again and again, it
+memoizes the values for future use.
+
+2) This seam carving algorithm can be implemented recursively. To think of how it would
+work, imagine some pixel in the image. To get the cost score of that pixel, we 
+would need to add the saliency of that pixel with the minimum score of the pixel
+to its upper left, directly above, and to the upper right.
+
+Each of these three pixels above would have cost score calculated based on
+the minimum cost of the three pixels above it, and this continues until we reach
+the top.
+
+Thus, this algorithm could be implemented recursively, starting with the pixel
+on the bottom row that has the least cost. Then, the cost of each of the pixels
+above is calculated to compare and find the minimum. To calculate the cost
+of each of those pixels, we calculate the minimum cost of the three above, and
+so on, until we reach the top.
+
+Thus, the base case is reaching the top row. The recursive step is finding the
+score of each of the three pixels above (to left, directly above, and to right) of
+a given pixel. (And then taking the minimum)
+
+3) The complexity of this recursive version for a NxN image would be O(3^N).
+We can think of this as the following: To get the cost of one pixel, it will
+take O(3^N) time complexity, as each pixel needs to find the cost of the three
+pixels above it, and so on recursively, which leads to a tree of height
+N with 3 branches off of each node. While, this will be done N^2 times
+for the N^2 pixels in the image, when compared to 3^N, N^2 is not of significance.
+Aftwerwards it will only take an extra O(N) time to find the lowest cost
+pixels in order from bottom to top.
+
+Thus, the time compelxity of the recursive version of the algorithm
+is O(3^N).
+
+4) To find a seam on a 50x50 image, if 1 billion computations are made per
+second, it will take 3^50/10^9 seconds, or 7.179 * 10^14 seconds.
+This equates to 22,764 centuries!

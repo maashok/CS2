@@ -1,0 +1,64 @@
+H3N2 Virus in the host Dog, collected on 02/02/10 in China.
+H3N2 Virus in the host Duck, collected in 2006 in China.
+
+Dog:
+AAAGTGCTGTTTCAGAATTGGGGGATTGAACCTATTGATAATGTCATGGGGATGATCGGAATATTACCTGACATGACTCCAAGCACAGAGATGTCACTGAGAGGAGTAAGAGTTAGTAAAATGGGAGTAGATGAATATTCCAGCACTGAAAGAGTGGTTGTAAGTATTGATCGTTTCTTACGGGTTCGAGATCAGCGGGGGAACATACTCTTATCTCCCGAAGAGGTCAGCGAAACACAAGGAACCGAGAAATTGACAATAACATACTCATCATCAATGATGTGGGAGATCAACGGTCCTGAGTCAGTACTTGTTAACACCTATCAATGGATCATCAGAAATTGGGAGACCGTGAAGATTCAATGGTCTCAAAACCCCACGGTACTGTACAATAAGATGGAGTTTGAACCGTTCCAATCCTTGGTACCCAAAGCTGCCAGAGGTCAATACAGTGGATTTGTGAGAGCACTATTCCAACAAATGCGTGACGTACTGGGGACATTTGATACTGTCCAGATAATAAAGCTGCTACCATTTGCAGCAGCCCCACCAGAACAGAGCAGAATGCAGTTTTCTTCTTTGACTGTGAATGTGAGAGGCTCAGGAATGAGAATACTCGTAAGGGGCAATTCCCCTGTGTTCAACTACAATAAGGCAACCAAAAGGCTTACCGTTCTTGGAAAAGACGCAGGTGCATTAACGGAGGATCCAGATGAGGGAACTGCCCGAGTGGAATCTGCAGTACTGAGGGGATTCCTAATTTTAGGCAAAGAGGACAAAAGATATGGACCAGCATTAAGCATCAATGAACTGAGCAATCTTGCGAAAGGGGAGAAAGCTAATGTGCTGATAGGACAAGGAGACG
+Duck:
+ATGGATCCCAA CACTATGTCAAGCTTTCAGGTAGAC TGCTTTCTTTGGCATGTCCGCAA ACGATTTG CA GAC C AAGAAATGGG TG  A TGCCCC ATTCCTTGACCGGCT  TCGCCG AGATCAGAAGTCCTTAAGAGGAAGAG GCA GCAC TCTTGGTCTGGACAT CGAAACAGCCACTCGTGCGGGAA AG CAGATAG TGGAGCGGAT TCTG GAGGAAGAATCTGATGAGGCACTTAAAATGAC TATTGCT  TC  TG TACCG ACTTCA CGCTACCTAA CTG ACATG  A CTC T TGAAGAAATG TCA A    GGGA  C  TG  G TTCA TG  CTCATG CCCAA GC A  GAA AGT  G  GCAGGTTCT CT TTGCA T  TAGG ATGGA   C  C AG G  CAATA A TGGATAAAA ACATCA TATTG AA A   GCAA ACTT CAGTGTAATTTTTA ACCGGCTGGAAACCCTAA TACTAC  TTAGG GCTTTCACAGAAGAAGGG GCA ATTGTGGGAGAAATCTC  ACCGTTACCTTCTCTT C CAGGAC  A   TACT G ATGAGG A T      GTCAAAAA TGCAATTGGGGTCCTCATCGG   AG GA CTTG AATGGA   A  TG AT AACACAGT TCGAGTCTCTGAAACTCTAC AGAG ATTC GC  T  TG GAGAAGCAGTAATG  AGG ATGG GG      GATCT   CCA C TCCCTC  CAA  AACAGA  AA CG GAAAATGGCGAGAA  C AAT TGA GTCAG A AATTTGA  
+
+Alignment:
+|**|**|****s||**||*****|*||**|**||***s|**|*||*|*||*|||**||*||s|**|**||s||s|||s|s|||*|**|*|s||ss|s||****s|*|****|***|***ss|*|**|s||||*|**|*|||***|**|*||||
+|s|**s|*|*s|*|||*||****|*|s||*****|**|***|*|*|||||s|*s|***||*s|***|**||*s||*|s||***|*||******|||**|*|*|*|||*||s||*|**|ss||ss||s|***|s|**|||s||*|*|**|*s|*
+|s||*||ss|s|*|s|s|*||***||*s|||s|ssss||||ss|ss||ss|s||||s||ss||||**s|||*|s|*s|ss|*|s|*|ss|ss|*||*||**s|*s||*||s|ss|*||s|***|sss|ss|s||s|ss|||||s|s|||||**
+**s|*|*||s||||*s||s|sss||**s||*|s|*|*|*|**|||*|s||*|*|**||*|****|*s|*||||ss||*|*s||***|*||**||||**|s|||s|*||**|******|||*ss||*||*|***|*****s|s|||||*ss|sss
+||||s|s|*|*||s|s|ssssss||****||s|*||||**||***|**|**||sss|*s|*s||||s||**||sss|ss||s||s|||**||*s||*||*****|*||||***|s||*|s|*||s||ss|ss||s|*|*|****||||*ss|||s
+|**|s||ssssss|||*|sss|||s|s|****|ss|||ss|||*||ss||s|*s|**||*||*|||||ss|s|||s||*s|**||s|s||***||ss
+
+Score: -299
+
+
+H3N2 Virus in the host Duck, collected on 09/24/2007 in Canada.
+H3N2 Virus in the host Duck, collected on 09/26/2007 in Canada.
+
+Duck 09/26
+ATGGAT TCCAACACTGTGTCAAGCTTTCAGGTAGACTGCTTTCTTTGG CATGTCCGCA AACGATTTGCAGACCAAGA ACTGGGTGATGCCC   CATTCCTTGAC CGGCT TCGCCGAGATCA GAAATCTCTGA GAGGA AG AGGCA G CAC TCTTGGTCTGGACATCGAAACAGCCAC T CGTGCTGGAAAGCAGATAGTG GAGAGGATT CTG GAGGAAGAATC  CGATGAGGCACTCAAAATGACTATTG  CCTCTGTACCTGCTTCACGCTACCTAACTG ACATGACTCTCGAAGAGATGTCAAGAGAC  TGGTTCATGCTCATGCCCAAGCAAAAAGTGG CTGGCTCCCTCTGCATCAGAATGGACCAAGCA ATTAT GGATAAAAACA TCAC ACTGAAAGCGAATTTCAGTGTGATCTTTGATCGGCTAGAG ACATTGATACTACTCAG AGCT T TCACTGAAGAA GGAGCCATTGTTGG CGAAATT TCAC CATT GC CTTC TCTTCCAGGACA TACTGATGAGGATGTCAAAAATGCAATTG  GGGTCC  TCATCG G AGGACTTGA ATGGAA TGATAACACAGTTC GAGTC TC TGAAA CTCTACAGAG ATTCG  CTTGGAGAAGCAGTAATGAGGATGGGAGACCTCCACTCCCTCCAAA   GCAGAA  ACG GAAAATG  GCGAGAACAATTG AGTCAGAAGTTTGA
+Duck 09/24
+ATGAGTCTTCTAACCGAGGTCGAAACGT ACGTTCTCTCTATCGTCCCGTCAGGCCCCCTCAAAGCCGAGATCGCGCAGAGACTTGAAGATGTGTTTGCAGGGAAGAACACCGATCTTGAGGCACTCATGGAATGGCTAAAGACAAGACCAATCCTGTCACCTCTGACTAAGGGGATTTTAGGATTTGTGTTCACGCTC ACCGTGCCCAGTGAGCGAGGACTGCAGCGTAGACGCTTTGTCCAAAATGCCCTTAATGGGAATGGGGATCCAAACAACATGGACAGAGCGGTCAAACTGTACAGGAAGCTTAAAAGGGAGATAACATTCCATGGGGCAAAAGAAGTGGCACTCAGTTATTCTACTGGTGCACTTGCCAGTTGTATGGGCCTCATATACAACAGGATGGGGACGGTGACCACTGAAGTGGCATT CGGCCTGGTGTGCGCCACGTGTGAGCAGATTGCTGATTCCCAGCATCGGTCTCACAGACAAATGGTGACAACAACCAACCCACTAATCAGGCACGAGAACAGAATGGTACTGGCCAGTACTACGGCTAAGGCCATGGAGCAAATGGCAGGGTCAAGTGAGCAAGCAGCAGAGGCTATGGAGGTTGCTAGTCAGGCCAGACAGATGGTGCAGGCAATGAGGACCATTGGGACTCATCCTAGCTCCAGTGCTGGTCTAAAAGATGATCTTCTTGAAAATTTGCAGGCCTACCAGAAACGGATGGGAGTGCAGATGCAGCGATTCAAGTGA
+
+Alignment:
+|||**|t|*|*|**|***|||*|****|s|*||***||***|**|***|t||*|*||*|*t||*|****|****|**|||t|||*|**||||***ttt||*******||t|*|*|t|*|**|***|||t|*|||**||*|t||**|t|*t|**|*t|t|||t
+|||***|**||**||***|**|*****t|t|**|||*s|**|*****||||t|*|||||*|t|*|t|**||*|**|*tt|*|**|*||*||*||***||*|***|tt||*****||*||******||***|*|||||t|||*||**||**||**|**|**||*
+|**|tt|||**||*****|****||**||***|*|**t||||**|*||***||***|*||||*||****|t|**|*t||||****||*t|*||t||||||***|*|||s|*|**||*|*|**|****|***|||t|*||||*|**|*|*|||t|*|*t|t||
+||*||**||t||*|*||*******t|**|*|*t|||*t||**t|*t|***t|**|*|*||*||t||||***|***|*|*||***|***|||*|tt|||||*tt|*|*|*t|t||*|***|*t|||||*t|****|**|||**|t||***t|*t||*|*t|**|
+***||*t|||*|tt||******|||***|*||**|*|***|*|**|***||*|*|**|||ttt||||**tt||*t||||**|tt|*|||**||**||t||**|******|||
+
+Score: 6
+
+
+The H3N2 virus is a variant of a virus found in pigs. It has been
+found to host in various animals, as shown in the above DNA sequences.
+
+This difference suggests that the strains of the virus are more similar
+when they are infecting the same species of animal, and are collected
+around the same time. Since viruses are very quick at mutating, in the 4
+years between the collection of the virus DNA sequence from the
+dog and the duck, the virus would have mutated a lot, leading to not that
+great of an alignment between the two. In addition, the fact that
+the virus would have to be different to affect dogs vs. ducks, which
+are quite different organisms, leads to the -299 alignment score
+for the two sequences.
+
+However, the alignment score for two DNA sequences of the H3N2 virus
+in the duck host, collected just 2 days apart, is a 6, which is
+much higher. As discussed before, this is because of the virus not
+having much time to mutate, and the only difference between the two
+hosts being small differences due to different genes being passed
+down from parents. Otherwise, they are of the same species, and inherently
+very similar.
+
+This comparison helps us note the fact that DNA alignment techniques
+can be used to figure out how similar different organisms are.
+
+
+Reference: DNA sequences found on Influenza Research Database
+http://www.fludb.org/brc/home.spg?decorator=influenza
